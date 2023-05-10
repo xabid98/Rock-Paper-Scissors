@@ -24,41 +24,41 @@
         
         if(playerSelection==="rock"){
             
-            if(computerSelection==="rock") 'You have tied! Rock equals Rock'
+            if(computerSelection==="rock") console.log(`You have tied! Rock equals Rock. Computer ${computer} - YOU ${player}`)
             
             else if(computerSelection==="paper"){
                 computer++
-                // console( "You Lose! Paper beats Rock")
+                 console.log( `You Lose! Paper beats Rock. Computer ${computer} - YOU ${player}`)
             }
             else if(computerSelection==="scissors"){
                 player++  
-                // console( "You Win! Rock beats scissors")
+                console.log( `You Win! Rock beats scissors. Computer ${computer} - YOU ${player}`)
             }
         }
 
         else if(playerSelection==="paper"){
             
-            if(computerSelection==="paper") 'You have tied! Paper equals paper'
+            if(computerSelection==="paper") console.log(`You have tied! Paper equals paper. Computer ${computer} - YOU ${player}`)
             else if(computerSelection==="scissors"){
                 computer++
-                // console("You Lose! Scissors beats paper")
+                console.log(`You Lose! Scissors beats paper. Computer ${computer} - YOU ${player}`)
             }
             else if(computerSelection==="rock"){
                 player++  
-                // console("You Win! Paper beats rock")
+               console.log(`You Win! Paper beats rock. Computer ${computer} - YOU ${player}`)
             }
 
         }
         else if(playerSelection==="scissors"){
 
-            if(computerSelection==="scissors") 'You have tied! Scissors equals scissors'
+            if(computerSelection==="scissors") console.log(`You have tied! Scissors equals scissors. Computer ${computer} - YOU ${player}`)
             else if(computerSelection==="rock"){
                 computer++
-                // console("You Lose! Rock beats scissors")
+                 console.log(`You Lose! Rock beats scissors. Computer ${computer} - YOU ${player}`)
             }
             else if(computerSelection==="paper"){
                 player++  
-                // console("You Win! Scissors beats paper")
+                console.log(`You Win! Scissors beats paper. Computer ${computer} - YOU ${player}`)
             }
         }
         }
